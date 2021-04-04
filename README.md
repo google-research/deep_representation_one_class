@@ -13,7 +13,7 @@ one-class data, and a classifier using generative or discriminative models.
 
 ## Install
 
-The requirements.txt includes all the dependencies for this project, and an
+The `requirements.txt` includes all the dependencies for this project, and an
 example of install and run the project is given in run.sh.
 
 ```bash
@@ -24,13 +24,13 @@ $sh deep_representation_one_class/run.sh
 
 `script/prepare_data.sh` includes an instruction how to prepare data for
 CatVsDog and CelebA datasets. For CatVsDog dataset, the data needs to be
-downloaded manually. Please uncomment line 2 to set DATA_DIR to download
+downloaded manually. Please uncomment line 2 to set `DATA_DIR` to download
 datasets before starting it.
 
 ## Run
 
 The options for the experiments are specified thru the command line arguments.
-The detailed explanation can be found in train_and_eval_loop.py. Scripts for
+The detailed explanation can be found in `train_and_eval_loop.py`. Scripts for
 running experiments can be found
 
 -   Rotation prediction: `script/run_rotation.sh`
@@ -43,7 +43,7 @@ running experiments can be found
 ## Evaluation
 
 After running `train_and_eval_loop.py`, the evaluation results can be found in
-`$MODEL_DIR/stats/summary.json`, where `$MODEL_DIR` is specified as model_dir of
+`$MODEL_DIR/stats/summary.json`, where `MODEL_DIR` is specified as model_dir of
 `train_and_eval_loop.py`.
 
 ## Contacts
