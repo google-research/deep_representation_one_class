@@ -43,9 +43,9 @@ running experiments can be found
 
 ## Evaluation
 
-After running train_and_eval_loop.py, the evaluation results can be found in
-$MODEL_DIR/stats/summary.json, where MODEL_DIR is specified as model_dir of
-train_and_eval_loop.py.
+After running `train_and_eval_loop.py`, the evaluation results can be found in
+`$MODEL_DIR/stats/summary.json`, where `$MODEL_DIR` is specified as model_dir of
+`train_and_eval_loop.py`.
 
 ## Contacts
 
