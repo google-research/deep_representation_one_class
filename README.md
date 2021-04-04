@@ -2,10 +2,9 @@
 
 **This is not an officially supported Google product.**
 
-Tensorflow 2 implementation of the paper: [
-Learning and Evaluating Representations for Deep One-class Classification
-](https://openreview.net/forum?id=HCSgyPUfeDj) published at
-[ICLR 2021](https://iclr.cc/) as a conference paper
+Tensorflow 2 implementation of the paper: 
+[Learning and Evaluating Representations for Deep One-class Classification](https://openreview.net/forum?id=HCSgyPUfeDj) 
+published at [ICLR 2021](https://iclr.cc/) as a conference paper
 by Kihyuk Sohn, Chun-Liang Li, Jinsung Yoon, Minho Jin, and Tomas Pfister.
 
 This directory contains a two-stage framework for deep one-class classification
