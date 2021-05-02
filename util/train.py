@@ -358,8 +358,9 @@ class BaseTrain(object):
         checkpoint=self.checkpoint,
         directory=os.path.join(self.file_path, 'raw'),
         max_to_keep=1)
+    self.tensorboard_dir = os.path.join(self.file_path, 'tb')
     self.summary_writer = tf.summary.create_file_writer(
-        logdir=os.path.join(self.file_path, 'tb'))
+        logdir=self.tensorboard_dir)
     # Initiate train iterator once
     # Note that creating iterator every epoch slows down
     # the training since it clears the data buffer
@@ -374,9 +375,7 @@ class BaseTrain(object):
     self.summary_writer.close()
 
     if verbose:
-      # pylint: disable=protected-access
-      logdir = self.summary_writer._init_op_fn.keywords['logdir'].numpy(
-      ).decode()
+      logdir = self.tensorboard_dir
       event_files = [
           event for event in tf.io.gfile.glob(os.path.join(logdir, '*'))
       ]
