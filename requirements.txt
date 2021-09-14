@@ -4,6 +4,6 @@ sklearn==0.0
 six==1.15.0
 tqdm==4.50.2
 Pillow==8.0.0
-tensorflow-gpu>=2.3.1
+tensorflow-gpu>=2.4.0
 tensorflow-addons>=0.11.2
 tensorflow-datasets>=4.0.1
